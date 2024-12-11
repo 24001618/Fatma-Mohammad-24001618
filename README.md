@@ -21,8 +21,3 @@ They provided both the raw data and the augmented data we used in our paper in `
 
 ## Performance
 Note from the repo of the research paper, that proves the possible instability of results: "The performance in the unsupervised setting is a little unstable. Different machines may lead to different results. In our experiments we use 24G RTX and 80G A100. Both machines lead to an average performance above 76.15."
-
-| Device | STS12 | STS13 | STS14 | STS15 | STS16 | STSBenchmark | SICKRelatedness |  Avg. |
-| :------: | :------: | :------: | :------: | :------: | :------: | :------:  | :------: | :------: |
-| A100 | 70.75 | 83.53 | 72.78 | 83.69 | 77.64 |    79.27     |      65.37      | 76.15 |
-| RTX | 70.21 | 83.88 | 73.06 | 83.87 | 77.60 | 79.19 | 65.31 | 76.16 |
