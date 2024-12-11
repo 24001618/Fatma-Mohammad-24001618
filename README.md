@@ -1,5 +1,5 @@
 # Code For PaSeR
-Our Paper [Sentence Representation Learning with Generative Objective rather than Contrastive Objective](https://arxiv.org/pdf/2210.08474.pdf) is accepted by the main conference of EMNLP 2022. In this repo, we provide the code for training in the unsupervised setting.
+This repo aims to reproduce the results of the [Sentence Representation Learning with Generative Objective rather than Contrastive Objective](https://arxiv.org/pdf/2210.08474.pdf) paper. In this repo, I will provide the code used throughout my study.
 
 
 ## Dependency
@@ -10,7 +10,7 @@ for other dependencies:
 `pip install -r requirements.txt`
 
 ## Data
-We provide both the raw data and the augmened data we used in our paper in `data/raw.csv` and `data/augmented.csv`. This data file is processed using the code from [EDA](https://github.com/jasonwei20/eda_nlp/). We preprocess `data/raw.csv` using synoynm replacement with a ratio of 0.5.
+They provided both the raw data and the augmented data we used in our paper in `data/raw.csv` and `data/augmented.csv`. This data file is processed using the code from [EDA](https://github.com/jasonwei20/eda_nlp/). Then they preprocess `data/raw.csv` using synonym replacement with a ratio of 0.5.
 
 
 ## Training
@@ -20,7 +20,7 @@ We provide both the raw data and the augmened data we used in our paper in `data
 `bash eval.sh`
 
 ## Performance
-The performance in the unsupervised setting is a little unstable. Different machines may lead to different results. In our experiments we use 24G RTX and 80G A100. Both machines lead to an average performance above 76.15.
+Note from the repo of the research paper, that proves the possible instability of results: "The performance in the unsupervised setting is a little unstable. Different machines may lead to different results. In our experiments we use 24G RTX and 80G A100. Both machines lead to an average performance above 76.15."
 
 | Device | STS12 | STS13 | STS14 | STS15 | STS16 | STSBenchmark | SICKRelatedness |  Avg. |
 | :------: | :------: | :------: | :------: | :------: | :------: | :------:  | :------: | :------: |
